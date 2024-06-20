@@ -2,8 +2,7 @@
 .env
 
 # Virtual environment:
-venv/
-/env/
+.venv/
 
 # Compiled Python files:
 __pycache__/
