@@ -1,0 +1,3 @@
+pip install requests
+pip install shutil
+pip install os
