@@ -1,26 +1,45 @@
-# Set-Wallpaper-as-NASA-Image-of-the-Day
-A python script and shortcuts automation that will set the user's wallpaper to the NASA image of the day.
+# NASA APOD Wallpaper Setter
+This project contains a Python script and Apple Shortcuts that will change your wallpaper to NASA'S Astrology Picture of the Day (APOD)
 
-## On MacOS:
-Download the Python script **or**, download this shortcut here: https://www.icloud.com/shortcuts/cfe991e52dd841adae0adce95a39a5f9. Once you do this, do the following steps to get an API key:
+## Requirements
 
-***To get an api key:***
-1. Go to the NASA API page here: https://api.nasa.gov/
-2. Sign up to generate an API key by filling in your name, email, and optionally what you would use the key for
-3. Paste your API key into the text field below.
+- Python 3.8 or higher
+- Requests
+- Python-Dotenv
+  - *Optional, but it's a good idea to use it to store your API key*
+- DateTime
+- See `requirements.txt` for the exact versions
 
-Your API key should look something like this (this key does not work so you can’t use it):
-86drAd2D8CsEdGaPbSQH3lmZcc8E7wgsrSKTqQdV
+## Installation
+### IOS Shortcut:
 
 
-## On IOS:
-Download this IOS shortcut that will get the NASA Astronomy Image of the Day (APOD) and set is as your wallpaper.
-https://www.icloud.com/shortcuts/cfe991e52dd841adae0adce95a39a5f9
+### MacOS Python Script
 
-## On Windows:
-(add steps here)
+It is preferable to create a venv environment to install your packages independently from the rest of your local machine. 
 
-### Planned Features:
-- [ ] MacOS wallpaper changer!
-- [x] A version of the wallpaper changer for ios (probably using the shortcuts app)
-- [ ] A version of this wallpaper changer for Windows.
+learn how to create .venv here: [venv — Creation of virtual environments — Python 3.12.4 documentation](https://docs.python.org/3/library/venv.html)
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/DevA-rora/Set-Wallpaper-as-NASA-Image-of-the-Day.git
+    cd Set-Wallpaper-as-NASA-Image-of-the-Day.git
+    ```
+
+2. Install the dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+3. Create a `.env` file in the root directory and add your NASA API key:
+    ```sh
+    API_KEY=your_nasa_api_key
+    ```
+
+## Usage
+
+Run the script to download the APOD image for the current date and set it as the desktop wallpaper:
+
+```sh
+python main.py
+```
